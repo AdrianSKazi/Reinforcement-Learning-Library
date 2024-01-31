@@ -1,7 +1,7 @@
 import gym
 
 # utworzenie srodowiska cartpole-v1
-e = gym.make('CartPole-v1')
+e = gym.make('CartPole-v1', render_mode = 'rgb_array')
 
 # środowisko nalezy zawsze zresetowac i zapisujemy w obs (obserwacje)
 obs = e.reset()
@@ -36,3 +36,5 @@ step - for step(0) we've moved cartpole to the left. We got 4 items:
 {e.step(0)}
 
       ''')
+
+e.render()
